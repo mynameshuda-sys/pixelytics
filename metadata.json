@@ -1,0 +1,6 @@
+{
+  "name": "Pixelytics",
+  "description": "Data analytics and automated machine learning predictions platform with ETL pipelines, interactive ML inference, and 33 machine learning algorithms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

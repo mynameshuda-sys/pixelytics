@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
+    background-size: 20px 20px;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  code, pre, .font-mono, .pixel-metric, .pixel-code {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Modern & Clean Dashboard Component Classes */
+.pixel-card {
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05);
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.pixel-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.05);
+}
+
+.pixel-card-accent {
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 4px 0 rgba(15, 23, 42, 0.04);
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
+
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.pixel-btn:active {
+  transform: translateY(1px);
+}
+
+.pixel-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  border-radius: 0.375rem;
+}
+
+.pixel-border {
+  border: 1px solid #e2e8f0;
+}
+
+.pixel-border-thick {
+  border: 2px solid #cbd5e1;
+}
+
+/* Custom scrollbar for data tables and logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
